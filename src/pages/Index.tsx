@@ -22,7 +22,7 @@ const Index = () => {
     <div className="fixed inset-0 w-full h-full overflow-hidden">
       <div 
         data-us-project="4csFUvvZF7FxYhlh0zqM" 
-        className="w-full h-full"
+        className="w-full h-full [&_a[href*='unicorn.studio']]:!hidden"
       />
     </div>
   );
