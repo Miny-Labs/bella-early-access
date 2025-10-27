@@ -45,7 +45,7 @@ const Index = () => {
           rel="noopener noreferrer"
           className="px-8 py-3 rounded-full bg-white text-blue-600 hover:bg-blue-50 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/40"
         >
-          Join Early Access
+          Early Access
         </a>
       </div>
     </div>
