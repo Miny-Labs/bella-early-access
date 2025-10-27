@@ -27,7 +27,7 @@ const Index = () => {
       />
       
       {/* Glassmorphic footer bar */}
-      <div className="fixed bottom-0 left-0 right-0 h-[10vh] backdrop-blur-xl bg-white/10 border-t border-white/20 flex items-center justify-center gap-8 z-50">
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 backdrop-blur-xl bg-white/10 border border-white/20 rounded-full px-6 py-4 flex items-center justify-center gap-6 z-50 shadow-2xl shadow-blue-500/20">
         <a
           href="https://x.com/bellaondoma"
           target="_blank"
