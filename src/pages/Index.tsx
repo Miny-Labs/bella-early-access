@@ -32,10 +32,10 @@ const Index = () => {
           href="https://x.com/bellaondoma"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20"
+          className="flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600/80 hover:bg-blue-600 backdrop-blur-sm border border-white/30 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/40"
         >
           <Twitter className="w-5 h-5" />
-          <span className="font-medium">Follow on X</span>
+          <span className="font-semibold">Follow on X</span>
         </a>
         
         <a
