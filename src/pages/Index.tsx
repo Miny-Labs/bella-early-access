@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Load Unicorn Studio script
+    const win = window as any;
+    if (!win.UnicornStudio) {
+      win.UnicornStudio = { isInitialized: false };
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.33/dist/unicornStudio.umd.js";
+      script.onload = () => {
+        if (!win.UnicornStudio.isInitialized) {
+          win.UnicornStudio.init();
+          win.UnicornStudio.isInitialized = true;
+        }
+      };
+      (document.head || document.body).appendChild(script);
+    }
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="fixed inset-0 w-full h-full overflow-hidden">
+      <div 
+        data-us-project="4csFUvvZF7FxYhlh0zqM" 
+        className="w-full h-full"
+      />
     </div>
   );
 };
