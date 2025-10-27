@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Twitter } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
@@ -24,6 +25,28 @@ const Index = () => {
         data-us-project="4csFUvvZF7FxYhlh0zqM" 
         className="w-full h-full [&_a[href*='unicorn.studio']]:!hidden"
       />
+      
+      {/* Glassmorphic footer bar */}
+      <div className="fixed bottom-0 left-0 right-0 h-[10vh] backdrop-blur-xl bg-white/10 border-t border-white/20 flex items-center justify-center gap-8 z-50">
+        <a
+          href="https://x.com/bellaondoma"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20"
+        >
+          <Twitter className="w-5 h-5" />
+          <span className="font-medium">Follow on X</span>
+        </a>
+        
+        <a
+          href="https://app.youform.com/forms/rzhbjdka"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 rounded-full bg-white text-blue-600 hover:bg-blue-50 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/40"
+        >
+          Join Early Access
+        </a>
+      </div>
     </div>
   );
 };
